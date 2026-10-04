@@ -1,0 +1,293 @@
+{
+  "examples": [
+    {
+      "example": "support",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        4,
+        4
+      ],
+      "approvals_recall": [
+        1,
+        1
+      ],
+      "approvals_precision": [
+        1,
+        1
+      ],
+      "bottlenecks": [
+        1,
+        1
+      ],
+      "risks": [
+        2,
+        2
+      ],
+      "missed": {
+        "automation": [],
+        "approvals": [],
+        "extra_approvals": [],
+        "bottlenecks": [],
+        "risks": []
+      }
+    },
+    {
+      "example": "invoice-processing",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        4,
+        4
+      ],
+      "approvals_recall": [
+        2,
+        2
+      ],
+      "approvals_precision": [
+        2,
+        3
+      ],
+      "bottlenecks": [
+        2,
+        2
+      ],
+      "risks": [
+        2,
+        2
+      ],
+      "missed": {
+        "automation": [],
+        "approvals": [],
+        "extra_approvals": [
+          "S7"
+        ],
+        "bottlenecks": [],
+        "risks": []
+      }
+    },
+    {
+      "example": "lead-qualification",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        5,
+        5
+      ],
+      "approvals_recall": [
+        1,
+        1
+      ],
+      "approvals_precision": [
+        1,
+        1
+      ],
+      "bottlenecks": [
+        1,
+        1
+      ],
+      "risks": [
+        1,
+        1
+      ],
+      "missed": {
+        "automation": [],
+        "approvals": [],
+        "extra_approvals": [],
+        "bottlenecks": [],
+        "risks": []
+      }
+    },
+    {
+      "example": "recruiting",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        4,
+        4
+      ],
+      "approvals_recall": [
+        2,
+        2
+      ],
+      "approvals_precision": [
+        2,
+        2
+      ],
+      "bottlenecks": [
+        1,
+        1
+      ],
+      "risks": [
+        2,
+        2
+      ],
+      "missed": {
+        "automation": [],
+        "approvals": [],
+        "extra_approvals": [],
+        "bottlenecks": [],
+        "risks": []
+      }
+    },
+    {
+      "example": "document-review",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        2,
+        3
+      ],
+      "approvals_recall": [
+        1,
+        1
+      ],
+      "approvals_precision": [
+        1,
+        1
+      ],
+      "bottlenecks": [
+        1,
+        1
+      ],
+      "risks": [
+        2,
+        2
+      ],
+      "missed": {
+        "automation": [
+          "S3"
+        ],
+        "approvals": [],
+        "extra_approvals": [],
+        "bottlenecks": [],
+        "risks": []
+      }
+    },
+    {
+      "example": "heldout-onboarding",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        2,
+        4
+      ],
+      "approvals_recall": [
+        1,
+        1
+      ],
+      "approvals_precision": [
+        1,
+        2
+      ],
+      "bottlenecks": [
+        2,
+        2
+      ],
+      "risks": [
+        1,
+        2
+      ],
+      "missed": {
+        "automation": [
+          "S3",
+          "S4"
+        ],
+        "approvals": [],
+        "extra_approvals": [
+          "S1"
+        ],
+        "bottlenecks": [],
+        "risks": [
+          [
+            "S5",
+            "security"
+          ]
+        ]
+      }
+    },
+    {
+      "example": "heldout-expenses",
+      "analyzer": "heuristic (offline, rule-based)",
+      "automation": [
+        1,
+        3
+      ],
+      "approvals_recall": [
+        2,
+        2
+      ],
+      "approvals_precision": [
+        2,
+        2
+      ],
+      "bottlenecks": [
+        2,
+        2
+      ],
+      "risks": [
+        0,
+        2
+      ],
+      "missed": {
+        "automation": [
+          "S2",
+          "S3"
+        ],
+        "approvals": [],
+        "extra_approvals": [],
+        "bottlenecks": [],
+        "risks": [
+          [
+            "S2",
+            "model_error"
+          ],
+          [
+            "S5",
+            "financial"
+          ]
+        ]
+      }
+    }
+  ],
+  "in_sample": {
+    "automation": [
+      19,
+      20
+    ],
+    "approvals_recall": [
+      7,
+      7
+    ],
+    "approvals_precision": [
+      7,
+      8
+    ],
+    "bottlenecks": [
+      6,
+      6
+    ],
+    "risks": [
+      9,
+      9
+    ],
+    "errors": 0
+  },
+  "held_out": {
+    "automation": [
+      3,
+      7
+    ],
+    "approvals_recall": [
+      3,
+      3
+    ],
+    "approvals_precision": [
+      3,
+      4
+    ],
+    "bottlenecks": [
+      4,
+      4
+    ],
+    "risks": [
+      1,
+      4
+    ],
+    "errors": 0
+  }
+}

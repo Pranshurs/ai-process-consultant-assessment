@@ -1,0 +1,38 @@
+{
+  "_note": "Written by hand from each example's text. The first five were also used to tune the heuristic (in-sample); the heldout-* expectations were written before the heuristic was ever run on them, and the heuristic was not changed afterwards.",
+  "support": {
+    "automation": {"S2": "ai", "S3": "deterministic", "S5": "ai", "S7": "deterministic"},
+    "approvals": ["S6"], "bottlenecks": ["S4"],
+    "risks": [["S2", "model_error"], ["S6", "financial"]]
+  },
+  "invoice-processing": {
+    "automation": {"S2": "ai", "S3": "deterministic", "S4": "deterministic", "S7": "deterministic"},
+    "approvals": ["S5", "S6"], "bottlenecks": ["S4", "S5"],
+    "risks": [["S2", "model_error"], ["S6", "financial"]]
+  },
+  "lead-qualification": {
+    "automation": {"S2": "ai", "S3": "ai", "S4": "deterministic", "S5": "deterministic", "S6": "any"},
+    "approvals": ["S7"], "bottlenecks": ["S5"],
+    "risks": [["S3", "model_error"]]
+  },
+  "recruiting": {
+    "automation": {"S2": "ai", "S3": "deterministic", "S4": "any", "S6": "deterministic"},
+    "approvals": ["S5", "S7"], "bottlenecks": ["S3"],
+    "risks": [["S2", "fairness"], ["S2", "data_privacy"]]
+  },
+  "document-review": {
+    "automation": {"S2": "ai", "S3": "ai", "S6": "deterministic"},
+    "approvals": ["S5"], "bottlenecks": ["S4"],
+    "risks": [["S2", "compliance"], ["S5", "compliance"]]
+  },
+  "heldout-onboarding": {
+    "automation": {"S2": "deterministic", "S3": "deterministic", "S4": "deterministic", "S6": "deterministic"},
+    "approvals": ["S5"], "bottlenecks": ["S3", "S6"],
+    "risks": [["S2", "data_privacy"], ["S5", "security"]]
+  },
+  "heldout-expenses": {
+    "automation": {"S2": "ai", "S3": "any", "S6": "deterministic"},
+    "approvals": ["S4", "S5"], "bottlenecks": ["S3", "S4"],
+    "risks": [["S2", "model_error"], ["S5", "financial"]]
+  }
+}

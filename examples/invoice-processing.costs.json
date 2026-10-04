@@ -1,0 +1,2 @@
+{"items_per_month": 400, "hourly_cost": 25, "currency": "USD",
+ "minutes_per_step": {"S2": 3, "S3": 4, "S4": 5, "S7": 2}}
